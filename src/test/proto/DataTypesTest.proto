@@ -1,0 +1,43 @@
+syntax = "proto3";
+import "google/protobuf/any.proto";
+import "google/protobuf/struct.proto";
+import "google/protobuf/timestamp.proto";
+package org.wcy123.api;
+message Root {
+    Obj1 obj1 = 1 [json_name = "hello"];
+    bytes base64 = 2;
+    enum AnEnum {
+        FOO_BAR = 0;
+        GOOD = 2;
+        BYE = 3;
+    };
+    AnEnum anEnum = 3;
+    repeated string anArray = 4;
+    bool aBoolean = 5;
+    string aString = 6;
+    int32 aInt32 = 7;
+    uint32 aUint32 = 8;
+    fixed32 aFixed = 9;
+    int64 aInt64 = 10;
+    uint64 aUint64 = 11;
+    fixed64 aFixed64 = 12;
+    float aFloat = 13;
+    double aDouble = 14;
+    //Timestamp aTimestamp = 15;
+    //Duration aDuaration = 16;
+    oneof anOneOf {
+        string eitherString = 17;
+        int32 orAnInt = 18;
+    }
+    google.protobuf.Any any = 19;
+    map<string, google.protobuf.ListValue> aMap = 20;
+    google.protobuf.Timestamp timestamp = 21;
+}
+message Obj1 {
+    string name = 1;
+}
+
+message Point {
+    int32 x = 1;
+    int32 y = 2;
+}
