@@ -47,7 +47,7 @@ public class ConfigurationWithProtobufMessageConverterTest {
                 MediaType.APPLICATION_JSON_UTF8.toString());
         converter.write(root1, MediaType.APPLICATION_JSON_UTF8, outputMessage);
         log.info("convert to json = {} ", outputMessage.getBodyAsString());
-        JSONAssert.assertEquals(expectedString(), outputMessage.getBodyAsString(), true);
+        JSONAssert.assertEquals(expectedString(), outputMessage.getBodyAsString(), false);
 
         final MockHttpInputMessage inputMessage =
                 new MockHttpInputMessage(expectedString().getBytes());
