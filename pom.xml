@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xmlns="http://maven.apache.org/POM/4.0.0"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.wcy123</groupId>
 	<artifactId>protobuf-http-message-converter</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0.FINAL</version>
 	<packaging>jar</packaging>
 
 	<name>Protobuf Http Message Converter</name>
@@ -29,7 +29,7 @@
 		<connection>scm:git:git@github.com:wcy123/ProtobufHttpMessageConverter.git</connection>
 		<developerConnection>scm:git:git@github.com:wcy123/ProtobufHttpMessageConverter.git
 		</developerConnection>
-		<tag>dev_1.10</tag>
+		<tag>v1.0.0.FINAL</tag>
 	</scm>
 	<dependencies>
 		<dependency>
@@ -68,10 +68,6 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
 			<plugin>
 				<groupId>org.xolstice.maven.plugins</groupId>
 				<artifactId>protobuf-maven-plugin</artifactId>
