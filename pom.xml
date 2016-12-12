@@ -6,7 +6,7 @@
 
 	<groupId>org.wcy123</groupId>
 	<artifactId>protobuf-http-message-converter</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0.FINAL</version>
 	<packaging>jar</packaging>
 
 	<name>Protobuf Http Message Converter</name>
@@ -81,6 +81,16 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
+	<distributionManagement>
+		<repository>
+			<id>easemob-releases</id>
+			<name>Easemob Maven Release</name>
+			<url>http://hk.nexus.op.easemob.com/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>easemob-snapshots</id>
+			<name>Easemob Maven Snapshot</name>
+			<url>http://hk.nexus.op.easemob.com/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
