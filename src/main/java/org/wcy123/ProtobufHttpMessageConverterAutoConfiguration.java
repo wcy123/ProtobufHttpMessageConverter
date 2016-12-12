@@ -27,9 +27,9 @@ import lombok.extern.slf4j.Slf4j;
 @ConditionalOnProperty("spring.protobuf.http.message.converter.enable")
 @Configuration
 @EnableWebMvc
-@EnableConfigurationProperties(ConfigurationWithProtobufMessageConverter.Params.class)
+@EnableConfigurationProperties(ProtobufHttpMessageConverterAutoConfiguration.Params.class)
 @Slf4j
-public class ConfigurationWithProtobufMessageConverter extends WebMvcConfigurerAdapter {
+public class ProtobufHttpMessageConverterAutoConfiguration extends WebMvcConfigurerAdapter {
     @Autowired
     private Params param;
 
