@@ -24,7 +24,7 @@ import com.google.protobuf.util.JsonFormat;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
-@ConditionalOnProperty("spring.protobuf.http.message.converter.enable")
+@ConditionalOnProperty("spring.protobuf.http.message.converter.enabled")
 @Configuration
 @EnableWebMvc
 @EnableConfigurationProperties(ProtobufHttpMessageConverterAutoConfiguration.Params.class)
